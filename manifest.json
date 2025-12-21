@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "NaukriPlus",
+  "version": "1.0",
+
+  "description": "Adds accurate numbers to applicants for each job.",
+
+  "permissions" : [
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.naukri.com/*"],
+      "js": ["naukriplus.js"],
+      "run_at" : "document_end"
+    }
+  ]
+}
